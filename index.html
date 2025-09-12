@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ulul Azmi Programmer</title>
+    <!-- Script EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="icon" type="image/png" href="/images/logo.png" />
+    <link rel="stylesheet" crossorigin href="/assets/index-C8hZf_Dp.css">
+  </head>
+  <body class="overflow-x-hidden w-screen">
+    <!-- Header Start -->
+    <header class="w-full absolute top-0 left-0 flex items-center z-10">
+      <div class="container">
+        <div class="flex items-center justify-between relative">
+          <div class="px-4">
+            <a href="#Home" class="font-bold text-lg text-primary block py-6"
+              >UlulAzmiProgrammer</a
+            >
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="block absolute right-4 lg:hidden"
+            >
+              <span
+                class="hamburger-line transition duration-300 origin-top-left"
+              ></span>
+              <span class="hamburger-line transition duration-300"></span>
+              <span
+                class="hamburger-line transition duration-300 origin-bottom-left"
+              ></span>
+            </button>
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:max-w-full lg:shadow-none lg:bg-transparent lg:rounded-none"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#Home"
+                    class="text-base py-2 mx-8 flex group-hover:text-primary"
+                    >Beranda</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#About"
+                    class="text-base py-2 mx-8 flex group-hover:text-primary"
+                    >Tentang Saya</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#Portofolio"
+                    class="text-base py-2 mx-8 flex group-hover:text-primary"
+                    >Portofolio</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#Technology"
+                    class="text-base py-2 mx-8 flex group-hover:text-primary"
+                    >Skills</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#Blog"
+                    class="text-base py-2 mx-8 flex group-hover:text-primary"
+                    >Blog</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#Contact"
+                    class="text-base py-2 mx-8 flex group-hover:text-primary"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Start -->
+    <section id="Home" class="pt-36 w-full">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full self-center px-4 lg:w-1/2">
+            <h1 class="text-base font-semibold text-primary md:text-xl">
+              Halo Semua 👋, Saya
+              <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl"
+                >Ulul Azmi</span
+              >
+            </h1>
+            <h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl">
+              Computer Engineering Student
+            </h2>
+            <p class="font-medium text-secondary mb-10 leading-relaxed">
+              Saya tertarik pada Backend, Frontend, AI, dan IoT untuk menguasai
+              pengembangan sistem secara menyeluruh dan inovatif
+            </p>
+            <a
+              href="https://wa.me/6282272992213?text=Halo%20Ulul,%20perkenalkan%20saya%20[Nama%20Anda].%20Saya%20sangat%20tertarik%20untuk%20berkolaborasi%20dengan%20Anda,%20sekaligus%20memberikan%20saran,%20berdiskusi,%20berbagi%20ide,%20dan%20bertukar%20pengalaman.%20Saya%20berharap%20kita%20bisa%20saling%20belajar%20dan%20menciptakan%20sesuatu%20yang%20bermanfaat%20bersama."
+              class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-90 transition duration-300 ease-in-out"
+              >Hubungi Saya</a
+            >
+          </div>
+          <div class="w-full self-end px-4 lg:w-1/2 mt-10">
+            <div class="mt-10 relative lg:mt-9 lg:right-0">
+              <img
+                src="/images/ulul1.png"
+                alt="Ulul Azmi"
+                class="max-w-full mx-auto scale-150"
+              />
+              <span
+                class="absolute -z-10 -bottom-30 left-1/2 -translate-x-1/2 md:scale-120"
+              >
+                <svg
+                  viewBox="0 0 200 200"
+                  width="500"
+                  height="500"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="oklch(70.4% 0.14 182.503)"
+                    d="M44.8,-29.5C60.1,-16.5,76.1,2.3,74.4,20C72.8,37.7,53.5,54.4,33,61.7C12.4,69.1,-9.4,66.9,-22.1,56.7C-34.8,46.4,-38.4,28,-42.9,9.4C-47.5,-9.1,-52.9,-27.8,-45.9,-38.9C-38.9,-50,-19.5,-53.5,-2.4,-51.6C14.7,-49.7,29.4,-42.4,44.8,-29.5Z"
+                    transform="translate(100 100) "
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- About Section Start -->
+    <section id="About" class="pt-36 pb-32 w-full">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-10 lg:w-1/2">
+            <h4
+              class="font-bold uppercase text-lg text-primary mb-3 lg:text-2xl"
+            >
+              Tentang Saya
+            </h4>
+            <h2 class="font-bold text-dark text-3xl mb-5 max-w-md lg:text-4xl">
+              Kenali Saya Lebih Dekat!
+            </h2>
+            <p class="text-secondary lg:text-lg">
+              Saya memiliki minat yang besar sekaligus terus mendalami bidang
+              <b class="text-primarysecondary">Web Development</b>, baik
+              <b class="text-primarysecondary">Frontend</b> maupun
+              <b class="text-primarysecondary">Backend</b>, serta memperluas
+              pengetahuan pada
+              <b class="text-primarysecondary">Internet of Things (IoT)</b> dan
+              <b class="text-primarysecondary">Artificial Intelligence (AI)</b>.
+              Dengan semangat belajar yang terus berkembang, saya berkomitmen
+              untuk membangun solusi digital yang inovatif dan bermanfaat.
+            </p>
+          </div>
+
+          <div class="w-full px-4 mb-10 lg:w-1/2 lg:pl-20">
+            <h3
+              class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-12"
+            >
+              Mari Terhubung
+            </h3>
+            <p class="font-medium text-base text-secondary mb-6 lg:text-lg">
+              Saya selalu terbuka untuk berdiskusi, berbagi pengalaman, maupun
+              menjalin kolaborasi baru. Jangan ragu untuk menghubungi saya jika
+              tertarik bekerja sama atau sekadar ingin bertukar ide.
+            </p>
+            <div class="flex items-center">
+              <!-- GITHUB -->
+              <a
+                href="https://github.com/ululazmiua"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex items-center justify-center border border-slate-300 text-slate-400 hover:border-primary hover:bg-primary hover:text-white transition duration-300"
+              >
+                <svg
+                  role="img"
+                  width="25"
+                  viewBox="0 0 24 24"
+                  class="fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>GitHub</title>
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                  />
+                </svg>
+              </a>
+
+              <!-- Instagram -->
+              <a
+                href="https://www.instagram.com/ululazmii._"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex items-center justify-center border border-slate-300 text-slate-400 hover:border-primary hover:bg-primary hover:text-white transition duration-300"
+              >
+                <svg
+                  role="img"
+                  width="25"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Instagram</title>
+
+                  <path
+                    d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
+                  />
+                </svg>
+              </a>
+
+              <!-- Linkedln -->
+              <a
+                href="https://www.linkedin.com/in/ulul-azmi-16009a317/"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex items-center justify-center border border-slate-300 text-slate-400 hover:border-primary hover:bg-primary hover:text-white transition duration-300"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  height="24"
+                  width="24"
+                >
+                  <title>Linkedln</title>
+
+                  <path
+                    fill="#64748b"
+                    fill-rule="evenodd"
+                    d="M5 1a4 4 0 0 0 -4 4v14a4 4 0 0 0 4 4h14a4 4 0 0 0 4 -4V5a4 4 0 0 0 -4 -4H5Zm1.205 6.91a1.705 1.705 0 1 0 0 -3.41 1.705 1.705 0 0 0 0 3.41ZM7.909 19.5V9.273H4.5V19.5h3.41Zm4.432 -10.227H9.273V19.5h3.068v-6.17c0.395 -0.642 1.077 -1.33 2.045 -1.33 1.364 0 1.705 1.364 1.705 2.046V19.5H19.5v-5.454c0 -1.828 -0.797 -4.773 -3.75 -4.773 -1.878 0 -2.92 0.685 -3.41 1.327V9.273Z"
+                    clip-rule="evenodd"
+                    stroke-width="1"
+                    class="fill-current"
+                  ></path>
+                </svg>
+              </a>
+
+              <!-- Gmail -->
+              <a
+                href="https://mail.google.com/mail/u/0/#search/ululazmiua02%40gmail.com"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex items-center justify-center border border-slate-300 text-slate-400 hover:border-primary hover:bg-primary hover:text-white transition duration-300"
+              >
+                <svg
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-current"
+                  width="25"
+                >
+                  <title>Gmail</title>
+                  <path
+                    d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"
+                  />
+                </svg>
+              </a>
+
+              <!-- WA -->
+              <a
+                href="https://wa.me/6282272992213?text=Halo%20Ulul,%20perkenalkan%20saya%20[Nama%20Anda].%20Saya%20sangat%20tertarik%20untuk%20berkolaborasi%20dengan%20Anda,%20sekaligus%20memberikan%20saran,%20berdiskusi,%20berbagi%20ide,%20dan%20bertukar%20pengalaman.%20Saya%20berharap%20kita%20bisa%20saling%20belajar%20dan%20menciptakan%20sesuatu%20yang%20bermanfaat%20bersama."
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex items-center justify-center border border-slate-300 text-slate-400 hover:border-primary hover:bg-primary hover:text-white transition duration-300"
+              >
+                <svg
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="fill-current p-[1px]"
+                  width="25"
+                >
+                  <title>WhatsApp</title>
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Portfolio Section Start -->
+    <section id="Portofolio" class="pt-36 pb-32 bg-slate-100 w-full">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h4 class="font-semibold text-lg text-primary mb-2 lg:text-2xl">
+              Portofolio
+            </h4>
+            <h2
+              class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl"
+            >
+              Project Terbaru
+            </h2>
+            <p class="font-medium text-secondary text-md lg:text-lg">
+              Berikut beberapa project terbaru saya yang sedang dan telah
+              dikembangkan. Semoga bisa menjadi inspirasi dan gambaran
+              perjalanan saya di dunia teknologi
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto"
+        >
+          <!-- project 1 -->
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden lg:h-[250px]">
+              <img src="/images/project1.png" alt="project1" width="w-full" />
+            </div>
+            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">
+              Web Contact Management
+            </h3>
+            <p class="text-base font-medium text-secondary">
+              Website Contact Management ini dirancang untuk membantu pengguna
+              dalam mengelola daftar kontak secara praktis, aman, dan
+              terorganisir. Pengguna dapat membuat akun pribadi melalui sistem
+              login & register, sehingga setiap data kontak yang tersimpan
+              bersifat privat dan hanya dapat diakses oleh pemilik akun tersebut
+            </p>
+          </div>
+
+          <!-- project 2 -->
+          <div class="mb-12 p-4 md:w-1/2">
+            <div class="rounded-md shadow-md overflow-hidden lg:h-[250px]">
+              <img src="/images/project2.png" alt="project2" width="w-full" />
+            </div>
+            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">
+              IoT Smart Farming: Sistem Monitoring Tanaman Nilam
+            </h3>
+            <p class="text-base font-medium text-secondary">
+              Aplikasi ini memantau tanaman nilam berbasis IoT dengan
+              mengumpulkan data dari berbagai sensor (suhu, kelembaban, pH
+              tanah, curah hujan, nutrisi tanah, dll). Data dikirim ke sistem,
+              disimpan di SQLite, lalu divisualisasikan menggunakan Plotly.
+              Dilengkapi fitur manajemen tanaman, grafik interaktif, serta
+              sistem peringatan dini untuk mendukung pertanian cerdas.
+            </p>
+          </div>
+
+          <!-- project 3 -->
+          <div class="mb-12 p-4 md:w-1/2">
+            <div
+              class="rounded-md shadow-md overflow-hidden lg:h-[250px] flex items-center justify-center"
+            >
+              <img
+                src="/images/comingsoon.jpg"
+                alt="comingsoon"
+                width="w-full"
+                class=""
+              />
+            </div>
+            <h3 class="font-semibold text-xl text-dark mt-5 mb-3">
+              Coming Soon: Next Innovation
+            </h3>
+            <p class="text-base font-medium text-secondary">
+              Saat ini project baru sedang saya kembangkan. Segera hadir dengan
+              konsep kreatif dan teknologi terbaru untuk menambah koleksi
+              portofolio saya. 😉
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Section End -->
+
+    <!-- Skilss Section Start -->
+    <section id="Technology" class="pt-36 pb-32 bg-slate-800 w-full">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h4 class="font-semibold text-lg text-primary mb-2 lg:text-2xl">
+              Technology
+            </h4>
+            <h2
+              class="font-bold text-white text-3xl mb-4 sm:text-4xl lg:text-5xl"
+            >
+              Perjalanan Belajar Teknologi
+            </h2>
+            <p class="font-medium text-secondary text-md lg:text-lg">
+              Saya terus mengeksplorasi berbagai teknologi, bahasa pemrograman,
+              dan framework untuk memperluas wawasan serta meningkatkan
+              keterampilan
+            </p>
+          </div>
+        </div>
+        <div class="w-full px-4">
+          <div class="flex flex-wrap items-center justify-center">
+            <span
+              class="max-w-[120px] mx-4 my-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8 hover:animate-goyang"
+            >
+              <img src="images/html.svg" alt="html" />
+            </span>
+            <span
+              class="max-w-[120px] mx-4 my-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8 hover:animate-goyang"
+            >
+              <img src="images/css.svg" alt="css" />
+            </span>
+            <span
+              class="max-w-[120px] mx-4 my-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8 hover:animate-goyang"
+            >
+              <img src="images/js.svg" alt="js" />
+            </span>
+            <span
+              class="max-w-[120px] mx-4 my-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8 hover:animate-goyang"
+            >
+              <img src="images/tailwind.svg" alt="tailwind" />
+            </span>
+            <span
+              class="max-w-[120px] mx-4 my-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8 hover:animate-goyang"
+            >
+              <img src="images/python.svg" alt="python" />
+            </span>
+            <span
+              class="max-w-[120px] mx-4 my-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8 hover:animate-goyang"
+            >
+              <img src="images/git.svg" alt="git" />
+            </span>
+            <span
+              class="max-w-[120px] mx-4 my-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8 hover:animate-goyang"
+            >
+              <img src="images/react.svg" alt="react" />
+            </span>
+            <span
+              class="max-w-[120px] mx-4 my-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8 hover:animate-goyang"
+            >
+              <img src="images/figma.svg" alt="figma" />
+            </span>
+            <span
+              class="max-w-[120px] mx-4 my-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8 hover:animate-goyang"
+            >
+              <img src="images/vite.svg" alt="mathplotlib" />
+            </span>
+            <span
+              class="max-w-[120px] mx-4 my-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8 hover:animate-goyang"
+            >
+              <img src="images/flask.png" alt="flask" class="scale-80" />
+            </span>
+            <span
+              class="max-w-[120px] mx-4 my-4 grayscale opacity-60 transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8 hover:animate-goyang"
+            >
+              <img src="images/openapi.png" alt="open api" class="scale-175" />
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- skilss Section End -->
+
+    <!-- Blog Section Start -->
+    <section id="Blog" class="pt-36 pb-32 bg-slate-100">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h4 class="font-semibold text-lg text-primary mb-2 lg:text-2xl">
+              Blog
+            </h4>
+            <h2
+              class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl"
+            >
+              Belajar Sambil Berbagi
+            </h2>
+            <p class="font-medium text-secondary text-md lg:text-lg">
+              Setiap baris kode punya cerita. Di sini saya membagikan tips,
+              pengalaman, dan pembelajaran seputar teknologi agar bisa
+              bermanfaat bagi siapa pun yang sedang belajar
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-wrap">
+          <!-- Blog 1 -->
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3 mb10">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+              <div>
+                <img
+                  src="images/blog1.png"
+                  alt="blog1"
+                  class="w-full overflow-hidden lg:h-[250px]"
+                />
+              </div>
+              <div class="py-8 px-6">
+                <h3
+                  class="mb-3 font-semibold text-xl text-dark hover:text-primary truncate"
+                >
+                  Memahami API Rate Limiting: Konsep, Manfaat, dan Implementasi
+                </h3>
+                <p
+                  class="text-base font-medium text-secondary mb-6 leading-relaxed"
+                >
+                  Dalam era digital saat ini, penggunaan Application Programming
+                  Interface (API) telah menjadi tulang punggung integrasi antar
+                  sistem dan layanan. Seiring meningkatnya jumlah permintaan
+                  terhadap API, pengelolaan lalu lintas data menjadi semakin
+                  penting untuk menjaga performa dan keamanan sistem. Salah satu
+                  solusi yang banyak digunakan untuk mengatasi tantangan ini
+                  adalah penerapan API Rate Limiting.
+                </p>
+                <a
+                  href="https://papitekno.com/kenali-tanda-hp-disadap-maling-m-banking-bisa-kuras-saldo-rekening/"
+                  target="_blank"
+                  class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80 transition duration-300"
+                  >Baca Selengkapnya</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog 2 -->
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3 mb10">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+              <div class="overflow-hidden lg:h-[250px]">
+                <img src="images/blog2.png" alt="blog1" class="w-full" />
+              </div>
+              <div class="py-8 px-6">
+                <h3
+                  class="mb-3 font-semibold text-xl text-dark hover:text-primary truncate"
+                >
+                  Cara Kerja Client–Server dalam Aplikasi
+                </h3>
+                <p
+                  class="text-base font-medium text-secondary mb-6 leading-relaxed"
+                >
+                  Dalam bidang ilmu komputer, arsitektur client–server merupakan
+                  salah satu model komunikasi paling fundamental yang mendasari
+                  cara kerja aplikasi modern. Melalui pendekatan ini, perangkat
+                  pengguna (client) dapat mengajukan permintaan layanan,
+                  sementara sistem pusat (server) berfungsi sebagai penyedia
+                  data maupun pemrosesan. Pemahaman terhadap cara kerja
+                  client–server penting karena menjadi dasar pengembangan
+                  aplikasi web, mobile, hingga sistem enterprise berskala besar.
+                </p>
+                <a
+                  href="https://www.totalit.co.id/blog/cara-kerja-client-server-dalam-aplikasi"
+                  class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80 transition duration-300"
+                  >Baca Selengkapnya</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog 3 -->
+          <div class="w-full px-4 lg:w-1/2 xl:w-1/3 mb10">
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-10">
+              <div class="overflow-hidden lg:h-[250px]">
+                <img src="images/blog3.png" alt="blog1" class="w-full" />
+              </div>
+              <div class="py-8 px-6">
+                <h3
+                  class="mb-3 font-semibold text-xl text-dark hover:text-primary truncate"
+                >
+                  Memahami API Throttling: Strategi Efektif untuk Mengelola
+                  Trafik Digital
+                </h3>
+                <p
+                  class="text-base font-medium text-secondary mb-6 leading-relaxed"
+                >
+                  Bagi perusahaan berbasis teknologi, API adalah aset penting
+                  yang menjadi penghubung antar sistem. Namun, akses yang tidak
+                  terkendali bisa menimbulkan masalah serius, mulai dari
+                  penurunan performa hingga risiko keamanan. Karena itu,
+                  penerapan API throttling menjadi strategi vital untuk
+                  mengelola trafik digital secara efisien.
+                </p>
+                <a
+                  href="https://www.totalit.co.id/blog/memahami-api-throttling-strategi-efektif-untuk-mengelola-trafik-digital"
+                  class="font-medium text-sm text-white bg-primary py-2 px-4 rounded-lg hover:opacity-80 transition duration-300"
+                  >Baca Selengkapnya</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blog Section End -->
+
+    <!-- Contact Section Start -->
+    <section id="Contact" class="pt-36 pb-32">
+      <div class="container">
+        <div class="w-full px-4">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h4 class="font-semibold text-lg text-primary mb-2 lg:text-2xl">
+              Contact
+            </h4>
+            <h2
+              class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl"
+            >
+              Hubungi Saya
+            </h2>
+            <p class="font-medium text-secondary text-md lg:text-lg">
+              Tertarik untuk berdiskusi, berkolaborasi, atau ada pertanyaan?
+              Jangan ragu menghubungi saya melalui form atau media sosial
+              berikut.
+            </p>
+          </div>
+        </div>
+
+        <form id="contact-form">
+          <div class="w-full lg:w-2/3 lg:mx-auto">
+            <div class="w-full px-4 mb-8">
+              <label for="name" class="text-base font-bold text-primary"
+                >Nama</label
+              >
+              <input
+                type="text"
+                name="name"
+                id="name"
+                required
+                class="w-full bg-slate-200 text-dark p-3 rounded-xl focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
+              />
+            </div>
+            <div class="w-full px-4 mb-8">
+              <label for="email" class="text-base font-bold text-primary"
+                >Email</label
+              >
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                class="w-full bg-slate-200 text-dark p-3 rounded-xl focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
+              />
+            </div>
+            <div class="w-full px-4 mb-8">
+              <label for="message" class="text-base font-bold text-primary"
+                >Pesan</label
+              >
+              <textarea
+                type="text"
+                name="message"
+                id="message"
+                required
+                class="w-full bg-slate-200 text-dark p-3 rounded-xl focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary h-32"
+              ></textarea>
+            </div>
+            <div class="w-full px-4">
+              <button
+                type="submit"
+                class="w-full text-base text-white bg-primary py-3 px-8 rounded-full font-semibold cursor-pointer hover:opacity-80 hover:shadow-lg transition duration-500"
+              >
+                Kirim
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="bg-slate-900 pt-32 pb-12">
+      <div class="container">
+        <div class="flex flex-wrap">
+          <div class="w-full px-4 mb-12 text-slate-300 font-medium md:w-1/3">
+            <h2 class="font-bold text-4xl text-white mb-5">UAP</h2>
+            <h3 class="font-bold text-2xl mb-2">Hubungi Kami</h3>
+            <p>ululazmiua02@gmail.com</p>
+            <p>
+              Jalan Teuku Nyak Arief, Kopelma Darussalam, Kota Banda Aceh, Aceh,
+              Indonesia
+            </p>
+          </div>
+          <div class="w-full mb-12 px-4 text-slate-300 md:w-1/3">
+            <h3 class="text-white font-semibold text-xl mb-5">
+              Kategori Tulisan
+            </h3>
+            <ul class="flex flex-col">
+              <li class="inline-block text-base hover:text-primary mb-3">
+                Pemrograman
+              </li>
+              <li class="inline-block text-base hover:text-primary mb-3">
+                Proyek
+              </li>
+              <li class="inline-block text-base hover:text-primary mb-3">
+                Artikel & Pemikiran
+              </li>
+            </ul>
+          </div>
+          <div class="w-full mb-12 px-4 text-slate-300 md:w-1/3">
+            <h3 class="text-white font-semibold text-xl mb-5">Tautan</h3>
+            <ul class="flex flex-col">
+              <li>
+                <a
+                  href="#Home"
+                  class="inline-block text-base hover:text-primary mb-3"
+                >
+                  Beranda
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#About"
+                  class="inline-block text-base hover:text-primary mb-3"
+                >
+                  Tentang Saya
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#Portofolio"
+                  class="inline-block text-base hover:text-primary mb-3"
+                >
+                  Portofolio
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#Technology"
+                  class="inline-block text-base hover:text-primary mb-3"
+                >
+                  Skilss
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#Blog"
+                  class="inline-block text-base hover:text-primary mb-3"
+                >
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#Contact"
+                  class="inline-block text-base hover:text-primary mb-3"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full pt-10 border-t border-slate-700">
+          <div class="flex items-center justify-center mb-5">
+            <!-- GITHUB -->
+            <a
+              href="https://github.com/ululazmiua"
+              target="_blank"
+              class="w-9 h-9 mr-3 rounded-full flex items-center justify-center border border-slate-300 text-slate-400 hover:border-primary hover:bg-primary hover:text-white transition duration-300"
+            >
+              <svg
+                role="img"
+                width="25"
+                viewBox="0 0 24 24"
+                class="fill-current"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>GitHub</title>
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                />
+              </svg>
+            </a>
+
+            <!-- Instagram -->
+            <a
+              href="https://www.instagram.com/ululazmii._"
+              target="_blank"
+              class="w-9 h-9 mr-3 rounded-full flex items-center justify-center border border-slate-300 text-slate-400 hover:border-primary hover:bg-primary hover:text-white transition duration-300"
+            >
+              <svg
+                role="img"
+                width="25"
+                class="fill-current"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Instagram</title>
+
+                <path
+                  d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"
+                />
+              </svg>
+            </a>
+
+            <!-- Linkedln -->
+            <a
+              href="https://www.linkedin.com/in/ulul-azmi-16009a317/"
+              target="_blank"
+              class="w-9 h-9 mr-3 rounded-full flex items-center justify-center border border-slate-300 text-slate-400 hover:border-primary hover:bg-primary hover:text-white transition duration-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                height="24"
+                width="24"
+              >
+                <title>Linkedln</title>
+
+                <path
+                  fill="#64748b"
+                  fill-rule="evenodd"
+                  d="M5 1a4 4 0 0 0 -4 4v14a4 4 0 0 0 4 4h14a4 4 0 0 0 4 -4V5a4 4 0 0 0 -4 -4H5Zm1.205 6.91a1.705 1.705 0 1 0 0 -3.41 1.705 1.705 0 0 0 0 3.41ZM7.909 19.5V9.273H4.5V19.5h3.41Zm4.432 -10.227H9.273V19.5h3.068v-6.17c0.395 -0.642 1.077 -1.33 2.045 -1.33 1.364 0 1.705 1.364 1.705 2.046V19.5H19.5v-5.454c0 -1.828 -0.797 -4.773 -3.75 -4.773 -1.878 0 -2.92 0.685 -3.41 1.327V9.273Z"
+                  clip-rule="evenodd"
+                  stroke-width="1"
+                  class="fill-current"
+                ></path>
+              </svg>
+            </a>
+
+            <!-- Gmail -->
+            <a
+              href="https://mail.google.com/mail/u/0/#search/ululazmiua02%40gmail.com"
+              target="_blank"
+              class="w-9 h-9 mr-3 rounded-full flex items-center justify-center border border-slate-300 text-slate-400 hover:border-primary hover:bg-primary hover:text-white transition duration-300"
+            >
+              <svg
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                class="fill-current"
+                width="25"
+              >
+                <title>Gmail</title>
+                <path
+                  d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"
+                />
+              </svg>
+            </a>
+
+            <!-- WA -->
+            <a
+              href="https://wa.me/6282272992213?text=Halo%20Ulul,%20perkenalkan%20saya%20[Nama%20Anda].%20Saya%20sangat%20tertarik%20untuk%20berkolaborasi%20dengan%20Anda,%20sekaligus%20memberikan%20saran,%20berdiskusi,%20berbagi%20ide,%20dan%20bertukar%20pengalaman.%20Saya%20berharap%20kita%20bisa%20saling%20belajar%20dan%20menciptakan%20sesuatu%20yang%20bermanfaat%20bersama."
+              target="_blank"
+              class="w-9 h-9 mr-3 rounded-full flex items-center justify-center border border-slate-300 text-slate-400 hover:border-primary hover:bg-primary hover:text-white transition duration-300"
+            >
+              <svg
+                role="img"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+                class="fill-current p-[1px]"
+                width="25"
+              >
+                <title>WhatsApp</title>
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                />
+              </svg>
+            </a>
+          </div>
+          <p class="font-medium text-xs text-slate-500 text-center">
+            Dibuat oleh
+            <a
+              href="https://www.instagram.com/ululazmii._"
+              target="_blank"
+              class="font-bold text-primary"
+              >Ulul Azmi</a
+            >
+            menggunakan
+            <a
+              href="https://tailwindcss.com/"
+              target="_blank"
+              class="font-bold text-sky-500"
+              >Tailwind CSS 4.1</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <script src="src/script.js"></script>
+  </body>
+</html>
